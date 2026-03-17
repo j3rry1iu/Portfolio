@@ -66,7 +66,7 @@ export default function EducationContact() {
         {/* Contact Section */}
         <div className="w-full md:w-1/2 flex flex-col">
           <div className="p-10 md:p-20 grow">
-            <h2 className="text-5xl font-serif text-textPrimary mb-12">Get in touch</h2>
+            <h2 className="text-5xl font-serif text-textPrimary mb-12">Get in touch!</h2>
             
             <motion.button
               initial={{ opacity: 0, y: 20 }}

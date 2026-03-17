@@ -29,9 +29,7 @@ export default function Navigation() {
       />
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-divider">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <Link href="/" className="text-accent font-serif text-2xl font-bold tracking-tighter">
-            JL
-          </Link>
+          <div className="w-10 h-10" /> {/* Spacer to keep nav items centered/right aligned */}
 
           {/* Desktop Nav */}
           <div className="hidden md:flex gap-8 items-center">

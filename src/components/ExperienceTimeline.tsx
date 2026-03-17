@@ -36,7 +36,8 @@ const experiences: Experience[] = [
     points: [
       "Multi-modal sensor selection (accelerometers, microphones, vibration) for CNC milling test rig",
       "Python data processing pipelines → PyTorch files for time-series RUL prediction",
-      "Transformer architectures (Autoformer) for remaining-useful-life prediction"
+      "Transformer architectures (Autoformer) for remaining-useful-life prediction", 
+      "Worked under Dr. Eugene Li"
     ]
   },
   {
@@ -60,8 +61,9 @@ const experiences: Experience[] = [
     date: "Oct 2022 – Oct 2024",
     location: "Kitchener, ON",
     points: [
-      "SolidWorks modelling of drivetrain and intake mechanisms",
-      "Prototyped and fabricated components in 3-month build cycle"
+      "Modelled key robot subsystems in SolidWorks",
+      "Prototyped and fabricated components using industry-standard manufacturing tools within a 3-month build cycle for the FIRST Robotics Challenge", 
+
     ],
     badge: "🏆 Worlds Qualifier"
   }
