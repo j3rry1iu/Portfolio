@@ -46,7 +46,7 @@ const experiences: Experience[] = [
     logo: "/logos/neodev.png",
     link: "https://neoleague.dev/",
     date: "May 2024 – Jun 2025",
-    location: "Remote",
+    location: "Waterloo, ON",
     points: [
       "Co-founded non-profit for high school engineering competitions",
       "Led 10-hour hackathon logistics (scheduling, facilities, technical resources)",
