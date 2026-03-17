@@ -3,6 +3,7 @@ import { DM_Serif_Display, JetBrains_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import IntroLoading from "@/components/IntroLoading";
+import { Analytics } from "@vercel/analytics/next";
 
 const dmSerifDisplay = DM_Serif_Display({
   weight: "400",
@@ -41,6 +42,7 @@ export default function RootLayout({
         <main className="relative z-10 w-full flex flex-col items-center">
           {children}
         </main>
+        <Analytics />
       </body>
     </html>
   );
