@@ -14,7 +14,7 @@ export default function IntroLoading() {
           exit={{ opacity: 0, scale: 0.95 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
           onClick={() => setIsVisible(false)}
-          className="fixed inset-0 z-[200] flex flex-col items-center justify-center bg-[#0a0a0a] text-textPrimary cursor-none"
+          className="fixed inset-0 z-[200] flex flex-col items-center justify-center bg-[#0a0a0a] text-textPrimary"
         >
           {/* Subtle Background Element */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-20 flex justify-center items-center">

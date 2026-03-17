@@ -1,11 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Linkedin, Download } from "lucide-react";
+import { Github, Linkedin, Download, Instagram } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-const headline = "Building things that move, think, and last.";
+const headline = "jerry liu";
 
 export default function HeroSection() {
   const [mounted, setMounted] = useState(false);
@@ -26,7 +26,7 @@ export default function HeroSection() {
           className="mb-8"
         >
           <span className="inline-flex items-center px-4 py-1.5 rounded-full border border-yellow-500/30 bg-yellow-500/5 text-yellow-400 text-xs font-mono font-medium tracking-wide animate-pulseFast">
-            🏆 Church Entrance Scholarship — Top of Cohort
+            🏆 arthur f. church entrance scholarship — top of cohort
           </span>
         </motion.div>
 
@@ -55,7 +55,7 @@ export default function HeroSection() {
           transition={{ delay: 3.5, duration: 0.8 }}
           className="text-lg md:text-xl text-textSecondary font-sans max-w-2xl mb-12 leading-relaxed"
         >
-          Mechatronics @ Waterloo · GPA 3.88 · Building at the edge of software and hardware
+          mechatronics @ uw · building at the intersection of software & hardware
         </motion.p>
 
         {/* CTA Buttons */}
@@ -67,18 +67,21 @@ export default function HeroSection() {
         >
           <Link
             href="#projects"
-            className="group px-8 py-3 rounded-none border border-divider text-textPrimary font-mono text-sm uppercase tracking-wider hover:bg-accent hover:text-black hover:border-accent transition-all duration-300 relative overflow-hidden"
+            className="group px-8 py-3 rounded-none border border-divider text-textPrimary font-mono text-sm lowercase tracking-wider hover:bg-accent hover:text-black hover:border-accent transition-all duration-300 relative overflow-hidden"
           >
-            <span className="relative z-10">[ View Projects ]</span>
+            <span className="relative z-10">[ view projects ]</span>
             <div className="absolute inset-0 bg-accent translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-0" />
           </Link>
-          <Link
-            href="#resume" // Placeholder for an actual pdf
-            className="group px-8 py-3 flex items-center gap-2 rounded-none border border-divider text-textPrimary font-mono text-sm uppercase tracking-wider hover:bg-surface transition-all duration-300"
+          <a
+            href="/Jerry_Liu_Resume.pdf"
+            download="Jerry_Liu_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group px-8 py-3 flex items-center gap-2 rounded-none border border-divider text-textPrimary font-mono text-sm lowercase tracking-wider hover:bg-surface transition-all duration-300"
           >
             <Download size={16} className="text-accent group-hover:-translate-y-1 transition-transform" />
-            <span>Download Resume</span>
-          </Link>
+            <span>download resume</span>
+          </a>
         </motion.div>
 
         {/* Social Links */}
@@ -86,22 +89,35 @@ export default function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 4.5, duration: 1 }}
-          className="flex items-center gap-6"
+          className="flex flex-col items-center gap-4"
         >
-          <Link
-            href="https://github.com/j3rry1iu"
-            target="_blank"
-            className="text-textSecondary hover:text-accent transition-colors p-2"
-          >
-            <Github size={24} />
-          </Link>
-          <Link
-            href="https://www.linkedin.com/in/jerry-liu-uw/"
-            target="_blank"
-            className="text-textSecondary hover:text-accent transition-colors p-2"
-          >
-            <Linkedin size={24} />
-          </Link>
+          <span className="font-mono text-[12px] text-textSecondary lowercase tracking-[0.3em]">
+            follow my journey
+          </span>
+          <div className="flex items-center gap-6">
+            <Link
+              href="https://github.com/j3rry1iu"
+              target="_blank"
+              className="text-textSecondary hover:text-accent transition-colors p-2"
+            >
+              <Github size={24} />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/jerry-liu-uw/"
+              target="_blank"
+              className="text-textSecondary hover:text-accent transition-colors p-2"
+            >
+            
+              <Linkedin size={24} />
+            </Link>
+            <Link
+              href="https://www.instagram.com/t0p.catt/"
+              target="_blank"
+              className="text-textSecondary hover:text-accent transition-colors p-2"
+            >
+              <Instagram size={24} />
+            </Link>
+          </div>
         </motion.div>
       </div>
 

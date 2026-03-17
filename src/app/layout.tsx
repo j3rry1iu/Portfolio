@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Serif_Display, JetBrains_Mono, Inter } from "next/font/google";
 import "./globals.css";
-import CustomCursor from "@/components/CustomCursor";
 import Navigation from "@/components/Navigation";
 import IntroLoading from "@/components/IntroLoading";
 
@@ -37,7 +36,6 @@ export default function RootLayout({
         className={`${dmSerifDisplay.variable} ${jetbrainsMono.variable} ${inter.variable} font-sans bg-background text-textPrimary antialiased`}
       >
         <div className="noise-bg" />
-        <CustomCursor />
         <IntroLoading />
         <Navigation />
         <main className="relative z-10 w-full flex flex-col items-center">

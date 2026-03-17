@@ -38,7 +38,7 @@ export default function EducationContact() {
               <p className="font-mono text-sm text-textSecondary uppercase tracking-widest mb-1">
                 BASc Mechatronics Engineering
               </p>
-              <div className="flex items-center gap-4 text-sm font-mono text-divider tracking-wider">
+              <div className="flex items-center gap-4 text-sm font-mono text-textSecondary tracking-wider">
                 <span>2025–2030</span>
                 <span>•</span>
                 <span className="text-accent">GPA: 3.88/4.0</span>
@@ -57,8 +57,8 @@ export default function EducationContact() {
                   <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
                 </svg>
               </div>
-              <h4 className="text-yellow-500 font-serif text-xl mb-2 relative z-10">Arthur F. Church</h4>
-              <p className="text-yellow-500/70 font-mono text-xs uppercase tracking-wider relative z-10">Entrance Scholarship</p>
+              <h4 className="text-yellow-500 font-serif text-xl mb-2 relative z-10">Arthur F. Church Scholarship</h4>
+              <p className="text-yellow-500/70 font-mono text-xs uppercase tracking-wider relative z-10">Awarded $10,000</p>
             </div>
           </motion.div>
         </div>
@@ -66,7 +66,7 @@ export default function EducationContact() {
         {/* Contact Section */}
         <div className="w-full md:w-1/2 flex flex-col">
           <div className="p-10 md:p-20 grow">
-            <h2 className="text-5xl font-serif text-textPrimary mb-12">Let&apos;s build something.</h2>
+            <h2 className="text-5xl font-serif text-textPrimary mb-12">Get in touch</h2>
             
             <motion.button
               initial={{ opacity: 0, y: 20 }}

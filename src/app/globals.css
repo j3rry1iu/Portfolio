@@ -5,12 +5,6 @@
 @layer base {
   body {
     @apply bg-background text-textPrimary font-sans antialiased overflow-x-hidden;
-    /* Hide default cursor for custom cursor */
-    cursor: none;
-  }
-  
-  a, button, [role="button"] {
-    cursor: none;
   }
 
   ::selection {

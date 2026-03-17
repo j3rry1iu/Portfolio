@@ -2,10 +2,10 @@
 
 
 
-const languages = ["Python", "TypeScript", "C++", "GCBASIC", "SQL", "JavaScript", "HTML", "CSS"];
-const frameworks = ["Next.js", "React", "PyTorch", "Node.js", "Tailwind CSS", "Framer Motion", "Supabase"];
-const hardware = ["SolidWorks", "3D Printing", "PCB Design", "Soldering", "Microcontrollers", "Sensors"];
-const tools = ["Git", "Linux", "Docker", "Figma", "VS Code", "Jenkins", "AWS"];
+const languages = ["Python", "TypeScript", "C++", "GCBASIC", "SQL", "JavaScript", "HTML", "CSS", "Java"];
+const frameworks = ["Next.js", "React", "PyTorch", "Node.js", "Tailwind CSS", "Supabase","PostgreSQL"];
+const hardware = ["SolidWorks", "3D Printing", "PCB Design", "Soldering", "Microcontrollers", "Sensors", "AutoCAD"];
+const tools = ["Git", "Linux", "VS Code", "Cursor"];
 
 const row1 = [...languages, ...frameworks];
 const row2 = [...hardware, ...tools];
@@ -34,14 +34,17 @@ export default function SkillsTicker() {
 
       <div className="relative flex flex-col gap-6 overflow-hidden max-w-full">
         {/* Row 1 */}
-        <div className="flex w-[200%] gap-6 animate-marquee hover:[animation-play-state:paused]">
+        <div 
+          className="flex w-[200%] gap-6 animate-marquee hover:[animation-play-state:paused]"
+          style={{ animationDuration: "50s" }}
+        >
           {renderRow(row1)}
         </div>
         
         {/* Row 2 - Reverse */}
         <div 
           className="flex w-[200%] gap-6 animate-marquee hover:[animation-play-state:paused]"
-          style={{ animationDirection: "reverse", animationDuration: "25s" }}
+          style={{ animationDirection: "reverse", animationDuration: "50s" }}
         >
           {renderRow(row2)}
         </div>
