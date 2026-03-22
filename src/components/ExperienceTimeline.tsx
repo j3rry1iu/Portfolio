@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 
@@ -105,7 +106,7 @@ export default function ExperienceTimeline() {
                 <h3 className="text-2xl font-serif text-textPrimary mb-1">{exp.role}</h3>
                 <div className="flex flex-wrap items-center gap-4 mb-4">
                   <div className="w-8 h-8 rounded bg-surface border border-divider flex items-center justify-center overflow-hidden shrink-0 transition-all duration-300 group-hover:border-accent/40 group-hover:shadow-[0_0_15px_#00ff9d20]">
-                    <img src={exp.logo} alt={`${exp.company} logo`} className="w-full h-full object-cover" />
+                    <Image src={exp.logo} alt={`${exp.company} logo`} width={32} height={32} className="w-full h-full object-cover" />
                   </div>
                   <div className="flex flex-col">
                     {exp.link ? (

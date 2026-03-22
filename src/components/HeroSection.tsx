@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Linkedin, ExternalLink, Instagram, Download } from "lucide-react";
+import { Github, Linkedin, ExternalLink, Instagram } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -72,7 +72,7 @@ export default function HeroSection() {
             <span className="relative z-10">[ view projects ]</span>
             <div className="absolute inset-0 bg-accent translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-0" />
           </Link>
-          <a
+          <Link
             href="/Jerry_Liu_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
@@ -80,7 +80,7 @@ export default function HeroSection() {
           >
             <ExternalLink size={16} className="text-accent group-hover:-translate-y-1 transition-transform" />
             <span>view resume</span>
-          </a>
+          </Link>
         </motion.div>
 
         {/* Social Links */}
