@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Linkedin, Download, Instagram } from "lucide-react";
+import { Github, Linkedin, ExternalLink, Instagram, Download } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -74,13 +74,12 @@ export default function HeroSection() {
           </Link>
           <a
             href="/Jerry_Liu_Resume.pdf"
-            download="Jerry_Liu_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="group px-8 py-3 flex items-center gap-2 rounded-none border border-divider text-textPrimary font-mono text-sm lowercase tracking-wider hover:bg-surface transition-all duration-300"
           >
-            <Download size={16} className="text-accent group-hover:-translate-y-1 transition-transform" />
-            <span>download resume</span>
+            <ExternalLink size={16} className="text-accent group-hover:-translate-y-1 transition-transform" />
+            <span>view resume</span>
           </a>
         </motion.div>
 
