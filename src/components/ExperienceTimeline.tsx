@@ -24,7 +24,8 @@ const experiences: Experience[] = [
     date: "Feb 2026 – Current",
     location: "Waterloo, ON",
     points: [
-      "Building drone-based remote sensing platform for greenhouse gas detection -- sensor fusion, embedded systems design, signal processing pipeline",
+      "Building drone-based remote sensing platform for greenhouse gas detection",
+      "Sensor fusion, embedded systems design, signal processing pipeline",
       "Working under Prof. Shunde Yin"
     ]
   },
