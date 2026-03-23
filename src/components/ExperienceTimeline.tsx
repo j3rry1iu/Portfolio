@@ -24,7 +24,7 @@ const experiences: Experience[] = [
     date: "Feb 2026 – Current",
     location: "Waterloo, ON",
     points: [
-      "WIP...",
+      "Building drone-based remote sensing platform for greenhouse gas detection -- sensor fusion, embedded systems design, signal processing pipeline",
       "Working under Prof. Shunde Yin"
     ]
   },
@@ -37,7 +37,7 @@ const experiences: Experience[] = [
     points: [
       "Multi-modal sensor selection (accelerometers, microphones, vibration) for CNC milling test rig",
       "Python data processing pipelines → PyTorch files for time-series RUL prediction",
-      "Transformer architectures (Autoformer) for remaining-useful-life prediction", 
+      "Transformer architectures (Autoformer) for remaining-useful-life prediction",
       "Worked under Dr. Eugene Li"
     ]
   },
@@ -51,7 +51,7 @@ const experiences: Experience[] = [
     points: [
       "Co-founded non-profit for high school engineering competitions",
       "Led 10-hour hackathon logistics (scheduling, facilities, technical resources)",
-      "$10,000+ in sponsorships from 500+ companies contacted; 150 students across 10 schools", 
+      "$10,000+ in sponsorships from 500+ companies contacted; 150 students across 10 schools",
       "Backed by convictional(yc w19)"
     ]
   },
@@ -63,7 +63,7 @@ const experiences: Experience[] = [
     location: "Kitchener, ON",
     points: [
       "Modelled key robot subsystems in SolidWorks",
-      "Prototyped and fabricated components using industry-standard manufacturing tools within a 3-month build cycle for the FIRST Robotics Challenge", 
+      "Prototyped and fabricated components using industry-standard manufacturing tools within a 3-month build cycle for the FIRST Robotics Challenge",
 
     ],
     badge: "🏆 Worlds Qualifier"
