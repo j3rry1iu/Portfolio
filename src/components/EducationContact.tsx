@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Copy, Check, Github, Linkedin, Twitter } from "lucide-react";
+import { Copy, Check, Github, Linkedin } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -110,7 +110,9 @@ export default function EducationContact() {
                 </span>
               </Link>
               <Link href="https://x.com/_jerryliu_" target="_blank" className="flex items-center gap-3 text-textSecondary hover:text-accent transition-colors group">
-                <Twitter size={20} />
+                <svg viewBox="0 0 24 24" aria-hidden="true" className="w-5 h-5 fill-current" fill="currentColor">
+                  <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932L18.901 1.153zM17.61 20.644h2.039L6.486 3.24H4.298L17.61 20.644z" />
+                </svg>
                 <span className="font-mono text-xs uppercase tracking-widest overflow-hidden">
                   <span className="inline-block -translate-x-full opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300">X</span>
                 </span>
