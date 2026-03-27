@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Linkedin, ExternalLink, Instagram } from "lucide-react";
+import { Github, Linkedin, ExternalLink, Instagram, Twitter } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -108,6 +108,13 @@ export default function HeroSection() {
             >
             
               <Linkedin size={24} />
+            </Link>
+            <Link
+              href="https://x.com/_jerryliu_"
+              target="_blank"
+              className="text-textSecondary hover:text-accent transition-colors p-2"
+            >
+              <Twitter size={24} />
             </Link>
             <Link
               href="https://www.instagram.com/t0p.catt/"

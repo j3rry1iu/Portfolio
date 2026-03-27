@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Copy, Check, Github, Linkedin } from "lucide-react";
+import { Copy, Check, Github, Linkedin, Twitter } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -107,6 +107,12 @@ export default function EducationContact() {
                 <Linkedin size={20} />
                 <span className="font-mono text-xs uppercase tracking-widest overflow-hidden">
                   <span className="inline-block -translate-x-full opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300">LinkedIn</span>
+                </span>
+              </Link>
+              <Link href="https://x.com/_jerryliu_" target="_blank" className="flex items-center gap-3 text-textSecondary hover:text-accent transition-colors group">
+                <Twitter size={20} />
+                <span className="font-mono text-xs uppercase tracking-widest overflow-hidden">
+                  <span className="inline-block -translate-x-full opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300">X</span>
                 </span>
               </Link>
             </motion.div>
