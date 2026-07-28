@@ -34,7 +34,7 @@ const experiences: Experience[] = [
     role: "Undergraduate Research Assistant",
     company: "University of Waterloo",
     logo: "/logos/waterloo.png",
-    date: "Feb 2026 – Current",
+    date: "Feb 2026 – June 2026",
     location: "Waterloo, ON",
     points: [
       "Building drone-based remote sensing platform for greenhouse gas detection",
