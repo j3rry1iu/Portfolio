@@ -3,9 +3,9 @@
 
 
 const languages = ["Python", "TypeScript", "C++", "GCBASIC", "SQL", "JavaScript", "HTML", "CSS", "Java"];
-const frameworks = ["Next.js", "React", "PyTorch", "Node.js", "Tailwind CSS", "Supabase","PostgreSQL"];
+const frameworks = ["Next.js", "React", "PyTorch", "Node.js", "NestJS", "Prisma", "Tailwind CSS", "Supabase", "PostgreSQL", "PostGIS", "Redis", "BullMQ"];
 const hardware = ["SolidWorks", "3D Printing", "PCB Design", "Soldering", "Microcontrollers", "Sensors", "AutoCAD"];
-const tools = ["Git", "Linux", "VS Code", "Cursor"];
+const tools = ["Git", "Docker", "AWS S3", "LangSmith", "Linux", "VS Code", "Cursor"];
 
 const row1 = [...languages, ...frameworks];
 const row2 = [...hardware, ...tools];

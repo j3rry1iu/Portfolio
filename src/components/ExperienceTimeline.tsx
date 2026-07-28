@@ -18,6 +18,19 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
+    role: "Software Engineer (Contract)",
+    company: "Parcyl",
+    logo: "/logos/parcyl.png",
+    date: "May 2026 – Current",
+    location: "Remote",
+    points: [
+      "Owned the natural-language-to-SQL pipeline turning plain-English commercial real estate questions into schema-aware, parameterized queries — read-only by default, with every placeholder verified before execution",
+      "Built AI agent flows for deal screening, sourcing, and site analysis, plus a nearest-by-point GIS enrichment endpoint over Postgres/PostGIS",
+      "Shipped the document engine: presigned S3 uploads feeding a BullMQ job queue and a multimodal VLM path that extracts structured data out of property documents",
+      "NestJS/Prisma monorepo on Docker + Render, working directly with the founder on priorities"
+    ]
+  },
+  {
     role: "Undergraduate Research Assistant",
     company: "University of Waterloo",
     logo: "/logos/waterloo.png",
