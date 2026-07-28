@@ -19,7 +19,7 @@ interface Experience {
 const experiences: Experience[] = [
   {
     role: "Software Engineering Intern",
-    company: "Parcyl",
+    company: "Parcyl.ai",
     logo: "/logos/parcyl.png",
     date: "May 2026 – Current",
     location: "Remote",
