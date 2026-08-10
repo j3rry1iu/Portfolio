@@ -24,10 +24,10 @@ const experiences: Experience[] = [
     date: "May 2026 – Current",
     location: "Remote",
     points: [
-      "Owned the natural-language-to-SQL pipeline turning plain-English commercial real estate questions into schema-aware, parameterized queries — read-only by default, with every placeholder verified before execution",
-      "Built AI agent flows for deal screening, sourcing, and site analysis, plus a nearest-by-point GIS enrichment endpoint over Postgres/PostGIS",
-      "Shipped the document engine: presigned S3 uploads feeding a BullMQ job queue and a multimodal VLM path that extracts structured data out of property documents",
-      "NestJS/Prisma monorepo on Docker + Render, working directly with the founder on priorities"
+      "Owned the agentic task system end-to-end: 11+ ReAct agents running site, market, ownership and comparable-sales studies on any parcel on demand, each personalized to the user's portfolio, uploaded documents, land asset type and prior deals",
+      "Rebuilt the comparable-sales valuation engine, replacing three widening database searches with a single query filtered in memory, and added deduplication and lot-size bounds that grew a property's evidence pool from 12 to 27 comparable parcels",
+      "Built an asynchronous document ingestion pipeline on S3 and BullMQ that converts PDFs, spreadsheets and scanned documents into structured facts, injected into the AI agent's context as claims it must cite}",
+      "Built an autonomous feedback-triage agent that polls for new reports, removes duplicates in three stages (exact match, then similarity scoring, then a model for the ambiguous band), and posts a Slack digest carrying the underlying evidence rather than just a label."
     ]
   },
   {
