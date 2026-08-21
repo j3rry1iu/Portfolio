@@ -24,10 +24,11 @@ const experiences: Experience[] = [
     date: "May 2026 – Current",
     location: "Remote",
     points: [
-      "Owned the agentic task system end-to-end: 11+ ReAct agents running site, market, ownership and comparable-sales studies on any parcel on demand, each personalized to the user's portfolio, uploaded documents, land asset type and prior deals",
-      "Rebuilt the comparable-sales valuation engine, replacing three widening database searches with a single query filtered in memory, and added deduplication and lot-size bounds that grew a property's evidence pool from 12 to 27 comparable parcels",
-      "Built an asynchronous document ingestion pipeline on S3 and BullMQ that converts PDFs, spreadsheets and scanned documents into structured facts, injected into the AI agent's context as claims it must cite}",
-      "Built an autonomous feedback-triage agent that polls for new reports, removes duplicates in three stages (exact match, then similarity scoring, then a model for the ambiguous band), and posts a Slack digest carrying the underlying evidence rather than just a label."
+      "Built a LangGraph multi-agent loop that drives the product as a synthetic user, finds defects, and autonomously proposes, builds and verifies the fix into a draft PR",
+      "Owned the agentic task system end-to-end: 11 ReAct agents running site, market, ownership and comparable-sales studies on any parcel on demand, each personalized to the user's portfolio, uploaded documents, preferences and prior deals",
+      "Hardened extraction against hallucination with confidence-scored grounded facts, forced inline source citations, and a token-ceiling injector that reports omitted documents instead of silently dropping them",
+      "Built an asynchronous document pipeline on S3 and BullMQ that converts PDFs, spreadsheets and scans into structured facts, injected into the AI agent as claims it must cite with a source quote and page number",
+      "Built an autonomous feedback-triage agent that polls for new user reports, removes duplicates in three stages (exact match, then similarity scoring, then a model for the ambiguous band), and posts a batched digest carrying the underlying evidence rather than just a label"
     ]
   },
   {
