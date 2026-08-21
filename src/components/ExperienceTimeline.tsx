@@ -150,7 +150,7 @@ export default function ExperienceTimeline() {
                 </div>
 
                 {exp.description && (
-                  <p className="text-textSecondary/60 text-xs leading-relaxed mb-6 max-w-prose">
+                  <p className="text-textSecondary text-xs leading-relaxed mb-6 max-w-prose">
                     {exp.description}
                   </p>
                 )}
