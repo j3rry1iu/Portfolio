@@ -29,9 +29,9 @@ const experiences: Experience[] = [
       "Site intelligence and feasibility platform for real estate diligence. 2-person engineering team; joined in stealth, shipped through MVP launch and first user cohort.",
     points: [
       "Built a LangGraph multi-agent loop that drives the product as a synthetic user, finds defects, and ships verified fixes as draft PRs",
-      "Designed and built an agentic report engine — 11 ReAct agents generating research reports for any property on demand, each personalized to the user's portfolio, uploaded documents and prior deals",
-      "Built an async document pipeline on S3 and BullMQ turning PDFs, spreadsheets and scans into confidence-scored facts the agent must cite by quote and page",
-      "Built a feedback-triage agent that deduplicates user reports in three stages and posts a batched digest carrying the underlying evidence"
+      "Designed and built an agentic report engine: 11 ReAct agents generating research reports for any property on demand, each personalized to the user's portfolio, uploaded documents and prior deals",
+      "Built an async document pipeline on S3 and BullMQ that turns PDFs, spreadsheets and scans into grounded context for the chat and report agents, cited by quote and page",
+      "Built a feedback-triage agent that deduplicates user feedback in three stages and posts a batched digest carrying the underlying evidence directly to slack"
     ]
   },
   {
@@ -122,7 +122,7 @@ export default function ExperienceTimeline() {
               {/* Right side: Content */}
               <div className="md:w-5/12 md:pl-12">
                 <h3 className="text-2xl font-serif text-textPrimary mb-1">{exp.role}</h3>
-                <div className="flex flex-wrap items-center gap-4 mb-4">
+                <div className="flex flex-wrap items-center gap-4 mb-2">
                   <div className="w-8 h-8 rounded bg-surface border border-divider flex items-center justify-center overflow-hidden shrink-0 transition-all duration-300 group-hover:border-accent/40 group-hover:shadow-[0_0_15px_#00ff9d20]">
                     <Image src={exp.logo} alt={`${exp.company} logo`} width={32} height={32} className="w-full h-full object-cover" />
                   </div>
@@ -150,7 +150,7 @@ export default function ExperienceTimeline() {
                 </div>
 
                 {exp.description && (
-                  <p className="text-textSecondary text-sm md:text-base leading-relaxed mb-4 italic">
+                  <p className="text-textSecondary/60 text-xs leading-relaxed mb-6 max-w-prose">
                     {exp.description}
                   </p>
                 )}
