@@ -91,7 +91,7 @@ const experiences: Experience[] = [
 export default function ExperienceTimeline() {
   return (
     <section id="experience" className="w-full py-24 relative bg-background">
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-serif text-textPrimary mb-20 flex items-center gap-6">
           <span className="w-16 h-[1px] bg-divider" />
           Experience
@@ -114,13 +114,13 @@ export default function ExperienceTimeline() {
               <div className="absolute left-[-4px] top-10 w-2 h-2 rounded-full bg-accent md:left-1/2 md:-translate-x-1/2 transform scale-100 group-hover:scale-[2] group-hover:shadow-[0_0_10px_#00ff9d] transition-all duration-300" />
 
               {/* Left side: Date & Location */}
-              <div className="md:w-5/12 md:pr-12 md:text-right mb-2 md:mb-0 mt-2">
+              <div className="md:w-5/12 md:pr-8 md:text-right mb-2 md:mb-0 mt-2">
                 <p className="font-mono text-sm text-textSecondary uppercase tracking-widest">{exp.date}</p>
                 <p className="font-mono text-xs text-textSecondary tracking-wider mt-1">{exp.location}</p>
               </div>
 
               {/* Right side: Content */}
-              <div className="md:w-5/12 md:pl-12">
+              <div className="md:w-5/12 md:pl-8">
                 <h3 className="text-2xl font-serif text-textPrimary mb-1">{exp.role}</h3>
                 <div className="flex flex-wrap items-center gap-4 mb-2">
                   <div className="w-8 h-8 rounded bg-surface border border-divider flex items-center justify-center overflow-hidden shrink-0 transition-all duration-300 group-hover:border-accent/40 group-hover:shadow-[0_0_15px_#00ff9d20]">
