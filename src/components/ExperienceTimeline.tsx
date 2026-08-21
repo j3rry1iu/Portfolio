@@ -28,11 +28,10 @@ const experiences: Experience[] = [
     description:
       "Site intelligence and feasibility platform for real estate diligence. 2-person engineering team; joined in stealth, shipped through MVP launch and first user cohort.",
     points: [
-      "Built a LangGraph multi-agent loop that drives the product as a synthetic user, finds defects, and autonomously proposes, builds and verifies the fix into a draft PR",
-      "Owned the agentic task system end-to-end: 11 ReAct agents running site, market, ownership and comparable-sales studies on any parcel on demand, each personalized to the user's portfolio, uploaded documents, preferences and prior deals",
-      "Hardened extraction against hallucination with confidence-scored grounded facts, forced inline source citations, and a token-ceiling injector that reports omitted documents instead of silently dropping them",
-      "Built an asynchronous document pipeline on S3 and BullMQ that converts PDFs, spreadsheets and scans into structured facts, injected into the AI agent as claims it must cite with a source quote and page number",
-      "Built an autonomous feedback-triage agent that polls for new user reports, removes duplicates in three stages (exact match, then similarity scoring, then a model for the ambiguous band), and posts a batched digest carrying the underlying evidence rather than just a label"
+      "Built a LangGraph multi-agent loop that drives the product as a synthetic user, finds defects, and ships verified fixes as draft PRs",
+      "Owned the agentic task system end-to-end: 11 ReAct agents running site, market, ownership and comparable-sales studies on any parcel, personalized to each user's portfolio and documents",
+      "Built an async document pipeline on S3 and BullMQ turning PDFs, spreadsheets and scans into confidence-scored facts the agent must cite by quote and page",
+      "Built a feedback-triage agent that deduplicates user reports in three stages and posts a batched digest carrying the underlying evidence"
     ]
   },
   {
