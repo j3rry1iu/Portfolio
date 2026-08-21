@@ -29,7 +29,7 @@ const experiences: Experience[] = [
       "Site intelligence and feasibility platform for real estate diligence. 2-person engineering team; joined in stealth, shipped through MVP launch and first user cohort.",
     points: [
       "Built a LangGraph multi-agent loop that drives the product as a synthetic user, finds defects, and ships verified fixes as draft PRs",
-      "Owned the agentic task system end-to-end: 11 ReAct agents running site, market, ownership and comparable-sales studies on any parcel, personalized to each user's portfolio and documents",
+      "Designed and built an agentic report engine — 11 ReAct agents generating research reports for any property on demand, each personalized to the user's portfolio, uploaded documents and prior deals",
       "Built an async document pipeline on S3 and BullMQ turning PDFs, spreadsheets and scans into confidence-scored facts the agent must cite by quote and page",
       "Built a feedback-triage agent that deduplicates user reports in three stages and posts a batched digest carrying the underlying evidence"
     ]
