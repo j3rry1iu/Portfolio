@@ -12,17 +12,21 @@ interface Experience {
   link?: string;
   date: string;
   location: string;
+  description?: string;
   points: string[];
   badge?: string;
 }
 
 const experiences: Experience[] = [
   {
-    role: "Software Engineering Intern",
+    role: "Full-Stack Software Engineering Intern",
     company: "Parcyl.ai",
     logo: "/logos/parcyl.png",
-    date: "May 2026 – Current",
+    date: "Apr 2026 – Aug 2026",
     location: "Remote",
+    badge: "Member of Founding Team",
+    description:
+      "Site intelligence and feasibility platform for real estate diligence. 2-person engineering team; joined in stealth, shipped through MVP launch and first user cohort.",
     points: [
       "Built a LangGraph multi-agent loop that drives the product as a synthetic user, finds defects, and autonomously proposes, builds and verifies the fix into a draft PR",
       "Owned the agentic task system end-to-end: 11 ReAct agents running site, market, ownership and comparable-sales studies on any parcel on demand, each personalized to the user's portfolio, uploaded documents, preferences and prior deals",
@@ -145,6 +149,12 @@ export default function ExperienceTimeline() {
                     )}
                   </div>
                 </div>
+
+                {exp.description && (
+                  <p className="text-textSecondary text-sm md:text-base leading-relaxed mb-4 italic">
+                    {exp.description}
+                  </p>
+                )}
 
                 <ul className="space-y-3">
                   {exp.points.map((point, pIdx) => (
