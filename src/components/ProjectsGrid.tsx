@@ -17,17 +17,6 @@ const projects = [
     type: "iframe",
   },
   {
-    id: "artistblend",
-    title: "ArtistBlend: Automated Playlist Curator",
-    date: "Feb 2026 - Current",
-    demoLink: "#",
-    githubLink: "https://github.com/j3rry1iu/artistblend",
-    stack: ["Next.js", "TypeScript", "Spotify Web API", "OAuth 2.0"],
-    description:
-      "Web app that dynamically filters and curates custom Spotify playlists from a user's liked songs by artist metadata. Implements OAuth 2.0 and handles paginated API requests for thousands of tracks.",
-    type: "placeholder",
-  },
-  {
     id: "neuralchess",
     title: "Neural Chess Engine",
     date: "Nov 2025",
