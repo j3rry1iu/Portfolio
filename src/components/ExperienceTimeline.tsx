@@ -28,10 +28,10 @@ const experiences: Experience[] = [
     description:
       "Site intelligence and feasibility platform for real estate diligence. 2-person engineering team; joined in stealth, shipped through MVP launch and first user cohort.",
     points: [
-      "Built a LangGraph multi-agent loop that drives the product as a synthetic user, finds defects, and ships verified fixes as draft PRs",
-      "Designed and built an agentic report engine: 11 ReAct agents generating research reports for any property on demand, each personalized to the user's portfolio, uploaded documents and prior deals",
-      "Built an async document pipeline on S3 and BullMQ that turns PDFs, spreadsheets and scans into grounded context for the chat and report agents, cited by quote and page",
-      "Built a feedback-triage agent that deduplicates user feedback in three stages and posts a batched digest carrying the underlying evidence directly to slack"
+      "Built a LangGraph multi-agent loop that drives the product as a synthetic user and autonomously proposes, builds and live-verifies each fix into a draft PR behind a human merge gate — surfacing ~85 verified defects across 6 root causes",
+      "Designed and built an agentic report engine: 11 ReAct agents generating research reports for any property in a 65M-record warehouse, each personalized to the user's portfolio, uploaded documents and prior deals",
+      "Built an async document pipeline on S3 and BullMQ that extracts structured facts from PDFs, spreadsheets and scans and feeds them into the chat and report agents, which must cite each fact to its source quote and page",
+      "Built a feedback-triage agent that deduplicates user reports in three stages and posts a batched Slack digest carrying the session replay behind every finding — collapsing 50+ raw reports into 5 distinct findings"
     ]
   },
   {
