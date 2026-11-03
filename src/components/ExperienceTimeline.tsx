@@ -19,6 +19,18 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
+    role: "Research Assistant",
+    company: "University of Waterloo",
+    logo: "/logos/waterloo.png",
+    date: "Sep 2026 – Present",
+    location: "Waterloo, ON",
+    points: [
+      "Built a physics model of a judo throw in Python that estimates each body part's mass from body measurements and tracks center of mass and 3D joint motion for both athletes, checked against YOLOv8 pose tracking on 10 videos",
+      "Synced two camera angles of judo throws to within 1 frame (at 30 fps) across 12 clips by automatically detecting the moment of the throw from body keypoints, using RTMPose and Pose2Sim",
+      "Fixed uneven video frame rates with FFmpeg and confirmed the sync on a second moment in each throw with 0 frames of error, using OpenCV skeleton overlays to check results visually"
+    ]
+  },
+  {
     role: "Full-Stack Software Engineering Intern",
     company: "Parcyl.ai",
     logo: "/logos/parcyl.png",
