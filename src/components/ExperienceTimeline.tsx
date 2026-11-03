@@ -34,8 +34,8 @@ const experiences: Experience[] = [
     role: "Full-Stack Software Engineering Intern",
     company: "Parcyl.ai",
     logo: "/logos/parcyl.png",
-    date: "Apr 2026 – Aug 2026",
-    location: "Remote",
+    date: "May 2026 – Aug 2026",
+    location: "Austin, TX",
     badge: "Member of Founding Team",
     description:
       "Site intelligence and feasibility platform for real estate diligence. 2-person engineering team; joined in stealth, shipped through MVP launch and first user cohort.",
